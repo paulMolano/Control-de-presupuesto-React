@@ -57,7 +57,7 @@ const Pregunta = ({
 Pregunta.propTypes = {
   guardarPresupuesto: PropTypes.func.isRequired,
   guardarRestante: PropTypes.func.isRequired,
-  actualizarPregunta: PropTypes.bool.isRequired,
+  actualizarPregunta: PropTypes.func.isRequired,
 };
 
 export default Pregunta;
