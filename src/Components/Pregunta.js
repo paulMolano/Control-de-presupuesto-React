@@ -7,7 +7,7 @@ const Pregunta = ({
   actualizarPregunta,
 }) => {
   //definir state
-  const [cantidad, guardarCantidad] = useState();
+  const [cantidad, guardarCantidad] = useState("");
   const [error, guardarError] = useState(false);
 
   //Funcion que lee el presupuesto
