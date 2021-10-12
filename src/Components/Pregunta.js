@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import PropTypes from "prop-types";
+
 import Error from "./Error";
 
 const Pregunta = ({
@@ -7,7 +9,7 @@ const Pregunta = ({
   actualizarPregunta,
 }) => {
   //definir state
-  const [cantidad, guardarCantidad] = useState("");
+  const [cantidad, guardarCantidad] = useState(0);
   const [error, guardarError] = useState(false);
 
   //Funcion que lee el presupuesto
@@ -51,6 +53,11 @@ const Pregunta = ({
       </form>
     </>
   );
+};
+Pregunta.propTypes = {
+  guardarPresupuesto: PropTypes.func.isRequired,
+  guardarRestante: PropTypes.func.isRequired,
+  actualizarPregunta: PropTypes.bool.isRequired,
 };
 
 export default Pregunta;

@@ -6,7 +6,7 @@ import ControlPresupuesto from "./Components/ControlPresupuesto";
 
 function App() {
   //definir state
-  const [presupuesto, guardarPresupuesto] = useState("");
+  const [presupuesto, guardarPresupuesto] = useState(0);
   const [restante, guardarRestante] = useState(0);
   const [mostrarpregunta, actualizarPregunta] = useState(true);
   const [gastos, guardarGastos] = useState([]);
